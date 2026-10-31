@@ -1,0 +1,271 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-deep-navy: #0A0E17;
+    --cyan-electric: #00F0FF;
+    --amber-alert: #FFB800;
+  }
+
+  body {
+    background-color: #0A0E17;
+    color: #F1F5F9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  body.theme-light {
+    background-color: #F8FAFC !important;
+    color: #0F172A !important;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* =========================================================
+   LIGHT / WHITE THEME STYLES
+   Crisp, high-contrast technical scannability on white surfaces
+========================================================= */
+.theme-light {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+/* Header & Navigation in Light Mode */
+.theme-light header {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom-color: #E2E8F0 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Main Cards & Panels */
+.theme-light .bg-\[\#0A0E17\],
+.theme-light .bg-\[\#070A11\],
+.theme-light .bg-\[\#0D1524\],
+.theme-light .bg-slate-900\/60,
+.theme-light .bg-slate-900\/50,
+.theme-light .bg-slate-900\/40,
+.theme-light .bg-slate-900\/80,
+.theme-light .bg-slate-900 {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+  box-shadow: 0 4px 15px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Secondary Inset Surfaces */
+.theme-light .bg-slate-950,
+.theme-light .bg-slate-950\/90,
+.theme-light .bg-slate-950\/80,
+.theme-light .bg-slate-950\/70,
+.theme-light .bg-slate-950\/60,
+.theme-light .bg-slate-950\/40,
+.theme-light .bg-black\/60,
+.theme-light .bg-cyan-950\/40,
+.theme-light .bg-cyan-950\/50,
+.theme-light .bg-cyan-950\/60,
+.theme-light .bg-cyan-950\/70,
+.theme-light .bg-cyan-950\/80 {
+  background-color: #F1F5F9 !important;
+  border-color: #E2E8F0 !important;
+}
+
+/* Primary Headings & Bold Text */
+.theme-light .text-white {
+  color: #0F172A !important;
+}
+
+/* Secondary Readable Body Copy */
+.theme-light .text-slate-200,
+.theme-light .text-slate-300 {
+  color: #334155 !important;
+}
+
+.theme-light .text-slate-400 {
+  color: #64748B !important;
+}
+
+.theme-light .text-slate-500 {
+  color: #64748B !important;
+}
+
+/* Borders in Light Theme */
+.theme-light .border-slate-800,
+.theme-light .border-slate-800\/80,
+.theme-light .border-slate-700,
+.theme-light .border-slate-700\/80,
+.theme-light .border-cyan-950,
+.theme-light .border-cyan-950\/80,
+.theme-light .border-cyan-900\/50 {
+  border-color: #E2E8F0 !important;
+}
+
+/* Accent Colors & Badges in White Theme */
+.theme-light .text-\[\#00F0FF\] {
+  color: #0284C7 !important; /* Sky 600 for sharp high contrast readability on white */
+}
+
+.theme-light .text-cyan-300,
+.theme-light .text-cyan-400 {
+  color: #0369A1 !important;
+}
+
+.theme-light .text-\[\#FFB800\] {
+  color: #D97706 !important; /* Amber 600 for crisp readability */
+}
+
+.theme-light .bg-cyan-950 {
+  background-color: #E0F2FE !important; /* Sky 100 */
+  color: #0369A1 !important;
+  border-color: #BAE6FD !important;
+}
+
+.theme-light .bg-amber-950,
+.theme-light .bg-amber-950\/40,
+.theme-light .bg-amber-950\/60 {
+  background-color: #FEF3C7 !important; /* Amber 100 */
+  color: #B45309 !important;
+  border-color: #FDE68A !important;
+}
+
+.theme-light .bg-rose-950,
+.theme-light .bg-rose-950\/40,
+.theme-light .bg-rose-950\/60,
+.theme-light .bg-rose-950\/80 {
+  background-color: #FFE4E6 !important;
+  color: #BE123C !important;
+  border-color: #FECDD3 !important;
+}
+
+.theme-light .bg-emerald-950 {
+  background-color: #D1FAE5 !important;
+  color: #065F46 !important;
+  border-color: #A7F3D0 !important;
+}
+
+/* Primary Action Buttons in White Theme */
+.theme-light .bg-\[\#00F0FF\] {
+  background-color: #0284C7 !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35) !important;
+}
+
+.theme-light .bg-\[\#00F0FF\] span,
+.theme-light .bg-\[\#00F0FF\] svg {
+  color: #FFFFFF !important;
+}
+
+.theme-light .bg-\[\#00F0FF\]:hover,
+.theme-light .hover\:bg-cyan-300:hover {
+  background-color: #0369A1 !important;
+  color: #FFFFFF !important;
+}
+
+.theme-light .bg-emerald-500 {
+  background-color: #059669 !important;
+  color: #FFFFFF !important;
+}
+
+.theme-light .bg-emerald-500 span,
+.theme-light .bg-emerald-500 svg {
+  color: #FFFFFF !important;
+}
+
+.theme-light .bg-amber-500 {
+  background-color: #D97706 !important;
+  color: #FFFFFF !important;
+}
+
+.theme-light .bg-amber-500 span,
+.theme-light .bg-amber-500 svg {
+  color: #FFFFFF !important;
+}
+
+.theme-light .min-h-screen {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+.theme-light .bg-gradient-to-r.from-\[\#00F0FF\] {
+  background-image: linear-gradient(to right, #0284C7, #0891B2, #D97706) !important;
+}
+
+/* Form Inputs & Selects in White Theme */
+.theme-light input,
+.theme-light select {
+  background-color: #FFFFFF !important;
+  border-color: #CBD5E1 !important;
+  color: #0F172A !important;
+}
+
+.theme-light input:focus,
+.theme-light select:focus {
+  border-color: #0284C7 !important;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15) !important;
+}
+
+.theme-light input::placeholder {
+  color: #94A3B8 !important;
+}
+
+/* Footer in White Theme */
+.theme-light footer {
+  background-color: #FFFFFF !important;
+  border-top-color: #E2E8F0 !important;
+  color: #64748B !important;
+}
+
+/* Custom technical radar sweep animation */
+@keyframes radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-cyan {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-radar-sweep {
+  animation: radar-sweep 4s linear infinite;
+}
+
+.animate-pulse-cyan {
+  animation: pulse-cyan 2.5s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+.theme-light ::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+}
+.theme-light ::-webkit-scrollbar-thumb:hover {
+  background: #0284C7;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "TheWeaveSquad",
+  "description": "Assemble verified, hackathon-ready student teams in 60 seconds with hyper-local campus matching and GitHub proof-of-work verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
